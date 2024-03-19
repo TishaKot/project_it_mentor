@@ -5,6 +5,8 @@ function initSlider() {
         spaceBetween: 30,
         pagination: {
           el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets: true,
         },
         mousewheel: true,
         keyboard: true,
