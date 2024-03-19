@@ -41,3 +41,23 @@ hideButton.onclick = () => {
   document.getElementById("btn1").style.display = "block";
   document.getElementById("btn2").style.display = "none";
 };
+
+
+// Функция для скрытия кнопки на мобильных устройствах
+
+const showMoreButton = document.querySelector('.btn__open');
+const hideButton = document.querySelector('.btn__hidden');
+
+
+function hideButtonOnMobile() {
+    if (window.innerWidth < 768) {
+        showMoreButton.style.display = 'none';
+        hideButton.style.display = 'none';
+    } else {
+        showMoreButton.style.display = 'block';
+        hideButton.style.display = 'block';
+    }
+}
+
+hideButtonOnMobile();
+window.addEventListener('resize', hideButtonOnMobile);
