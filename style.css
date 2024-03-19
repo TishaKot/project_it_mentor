@@ -47,7 +47,6 @@ body {
 }
 
 .swiper-slide img {
-    width: 58%;
     object-fit: cover;
 }
 
@@ -69,7 +68,6 @@ body {
 
 
 .title__services {
-    width: 288px;
     color: #7E7E82;
     font-family: "TTLakes-Regular";
     font-size: 16px;
