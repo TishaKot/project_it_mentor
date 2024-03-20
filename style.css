@@ -114,6 +114,9 @@ body {
 
     .services-slide {
         display: none;
+        width: 31%;
+        text-align: center;
+        padding: 20px;
     }
 
     .services-slide:nth-child(-n+6) {
@@ -127,7 +130,6 @@ body {
     }
 
     .services__software {
-        max-width: 768px;
         padding: 16px 24px;
     }
 
@@ -194,7 +196,7 @@ body {
     .services__blocks {
         display: flex;
         flex-wrap: wrap;
-        gap: 32px;
+        /* gap: 32px; */
         max-width: 100%;
     }
 
@@ -202,7 +204,6 @@ body {
         display: flex;
         justify-content: flex-start;
         flex-wrap: wrap;
-        gap: 32px;
         padding-top: 16px;
     }
 
@@ -216,6 +217,9 @@ body {
 
     .services-slide {
         display: none;
+        width: 23%;
+        text-align: center;
+        padding: 20px;
     }
 
     .services-slide:nth-child(-n+8) {
