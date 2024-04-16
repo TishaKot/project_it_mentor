@@ -2,11 +2,14 @@
 
 function initSlider() {
     new Swiper("#swiper1", {
-        spaceBetween: 30,
+      slidesPerView: "auto",
+        spaceBetween: 15,
+        loop: false,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
           dynamicBullets: true,
+          spaceBetween: 40,
         },
         mousewheel: true,
         keyboard: true,
@@ -17,12 +20,14 @@ initSlider();
 
  function initSlider2() {
     new Swiper("#swiper2", {
-     
-        spaceBetween: 30,
+     slidesPerView: "auto",
+        spaceBetween: 10,
+        loop: false,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
           dynamicBullets: true,
+          type: "bullets",
         },
         mousewheel: true,
         keyboard: true,
@@ -39,6 +44,7 @@ function initSlider3() {
           el: ".swiper-pagination",
           clickable: true,
           dynamicBullets: true,
+          spaceBetween: 20,
         },
         
         mousewheel: true,
@@ -178,10 +184,10 @@ toggleButton();
 // Открытие модального окна ОБРАТНАЯ СВЯЗЬ
 
 const modal = document.querySelector('.modal');
-const openModalButton = document.querySelector('.contact_section__chat');
+const openModalButton = document.querySelector('.icon__chat');
 const closeModalButton = document.getElementById('modal__window_call_btn_close');
 const modalContent = document.querySelector('.modal__window__feedback');
-const headerPhone = document.querySelector('.header__menu__phone');
+const headerPhone = document.querySelector('.phone');
 
 openModalButton.addEventListener("click", function() {
     modal.style.display = "block";
@@ -219,8 +225,8 @@ modal.addEventListener("click", function(e) {
 // Открытие модального окна ЗАКАЗАТЬ ЗВОНОК
 
 const modalD = document.querySelector('.modal__wrap__call');
-const phone = document.querySelector('.contact_section__call');
-const headerChat = document.querySelector('.header__menu__phone__chat');
+const phone = document.querySelector('.icon__call');
+const headerChat = document.querySelector('.chat');
 const closeButton = document.getElementById('modal__window_btn_close');
 
 
@@ -262,10 +268,10 @@ modalD.addEventListener('click', (e) => {
 
 // функция открытия текста
 
-const readButton = document.querySelector('.image__button');
-const readText = document.querySelector('.chapter__second_end');
+const readButton = document.querySelector('.services__button');
+const readText = document.querySelector('.text__screen_768__end');
 const imgArrow = document.querySelector('.img__arrow');
-const buttonText = document.querySelector('.button__text');
+const buttonText = document.querySelector('.services__button__text');
 
 
 readButton.addEventListener('click', function() {
@@ -287,8 +293,8 @@ readButton.addEventListener('click', function() {
 
 ////////////////////////////////////////////
 // document.addEventListener('DOMContentLoaded', function () {
-//     const burgerBtn = document.getElementById('burger__menu');
-//     const burgerMenu = document.querySelector('.conteiner_768');
+//     const burgerBtn = document.getElementById('burger__btn');
+//     const burgerMenu = document.querySelector('.burger__menu');
     
 //     burgerBtn.addEventListener('click', function() {
 //         burgerMenu.style.left = '0';
@@ -305,10 +311,10 @@ readButton.addEventListener('click', function() {
 
 
 document.addEventListener('DOMContentLoaded', function() {
-  const burgerBtn = document.getElementById('burger__menu');
-  const closeBtn = document.querySelector('.close-btn');
-  const burgerMenu = document.querySelector('.conteiner_768');
-  const overlay = document.querySelector('.overlay');
+  const burgerBtn = document.getElementById('burger__btn');
+  const closeBtn = document.querySelector('.burger__close-btn');
+  const burgerMenu = document.querySelector('.burger__menu');
+  const overlay = document.querySelector('.burger__overlay');
 
   burgerBtn.addEventListener('click', function() {
     burgerMenu.classList.add('open');

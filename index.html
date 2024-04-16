@@ -7,63 +7,94 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <title>Построение сеток</title>
+    <title>Services</title>
+    <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="normalize (1).css" />
-    <link rel="stylesheet" href="fonts/TTLakes/" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
-
   <body>
-    <section class="ggggggg">
-      <!-- бургер меню -->
-
-      <!-- конец бургер меню -->
-      <section class="conteiner_768">
-        <div class="header_1440">
-          <div><img src="svg/Group.svg" alt="" /></div>
-          <div><img src="svg/search.svg" alt="" /></div>
-        </div>
-        <section class="conteiner_320">
-          <header class="header">
-            <div class="block_left">
-              <div class="burger__menu">
-                <span class="burger__span"></span>
-              </div>
-              <button class="close-btn">&times;</button>
-              <img src="svg/Group.svg" alt="" />
+        <header class="header header_active">
+            <div class="header__menu_left">
+              <div id="burger__btn" class="burger__btn">
+              <span class="burger__span"></span>
             </div>
-            <div class="block_right">
+             <img class="logo" src="svg/Group.svg" alt="логотип сайта" />
+              
+            </div>
+            <div class="header__menu_right">
+              <ul class="header__menu__list">
+                <li class="header__menu__item"><a href="#">
+                  <img
+                class="phone"
+                src="svg/call.svg"
+                alt="иконка трубки телефонной"
+              /></a></li>
+              <li class="header__menu__item"><a href="#"><img
+                class="chat"
+                src="svg/chat.svg"
+                alt="иконка чата"
+              />
+              </a></li>
+              <li class="header__menu__item"><a href="">
+              <img class="profile" src="svg/profile.svg" alt="иконка профиля" />
+              </a>
+            </li>
+            <li class="header__menu__item"><a href="#">
+              <img
+                class="settings__icon"
+                src="svg/repair.svg"
+                alt="иконка настроек"
+              /></a>
+              </li>
+              <li class="header__menu__item"><a href="#">
+              <img
+                class="search__icon"
+                src="svg/checkstatus.svg"
+                alt="иконка поиска"
+              /></a>
+              </li>
+              </ul>
+            </div>
+        </header>
+
+    <main class="wrapper__store">
+      <div class="burger__menu">
+          <div class="burger__menu__header">
+            <div class="burger__menu__header__block_left">
+              <button class="burger__close-btn">
+                <img src="svg/icont.svg" alt="иконка крестика">
+              </button>
+              <img src="svg/Group.svg" alt="логотип сайта" />
+            </div>
+            <div class="burger__menu__header__block_right">
               <img
                 class="search__icon"
                 src="svg/search.svg"
                 alt="Иконка поиска"
               />
             </div>
-          </header>
-          <section class="section__block__sidebar">
-            <nav class="nav__menu">
-              <ul class="list__menu">
-                <li class="item__menu">Ремонт техники</li>
-                <li class="item__menu">Корпоративным клиентам</li>
-                <li class="item__menu">Услуги и сервисы</li>
-                <li class="item__menu">Продавцам техники</li>
-                <li class="item__menu">Партнерам</li>
-                <li class="item__menu">Производителям</li>
-                <li class="item__menu">Наши сервисные центры</li>
-                <li class="item__menu">Контакты</li>
+          </div>
+          <aside class="burger__menu__sidebar">
+            <nav class="burger__menu__sidebar__nav__menu">
+              <ul class="burger__menu__sidebar__nav__menu__list">
+                <li class="burger__menu__list__item burger__menu__list__item_active"><a class="burger__menu__link" href="#">Ремонт техники</a></li>
+                <li class="burger__menu__list__item"><a class="burger__menu__link" href="#">Корпоративным клиентам</a></li>
+                <li class="burger__menu__list__item"><a class="burger__menu__link" href="#">Услуги и сервисы</a></li>
+                <li class="burger__menu__list__item"><a class="burger__menu__link" href="#">Продавцам техники</a></li>
+                <li class="burger__menu__list__item"><a class="burger__menu__link" href="#">Партнерам</a></li>
+                <li class="burger__menu__list__item"><a class="burger__menu__link" href="#">Производителям</a></li>
+                <li class="burger__menu__list__item"><a class="burger__menu__link" href="#">Наши сервисные центры</a></li>
+                <li class="burger__menu__list__item"><a class="burger__menu__link" href="#">Контакты</a></li>
               </ul>
             </nav>
-
-            <div class="contact_section">
-              <div class="icon_menu">
+            <div class="burger__menu__contact_section">
+              <div class="burger__menu__icon_block">
                 <img
-                  class="contact_section__call"
+                  class="icon__call"
                   src="svg/call.svg"
                   alt="Иконка телефонной трубки"
                 />
                 <img
-                  class="contact_section__chat"
+                  class="icon__chat"
                   src="svg/chat.svg"
                   alt="Иконка чата"
                 />
@@ -72,119 +103,69 @@
               <a class="mail__name" href="mailto:mail@cps.com">mail@cps.com</a>
               <a class="namber" href="tel:+88008908900"> 8 800 890 8900</a>
             </div>
-            <div class="lang_menu">
-              <button class="button__lang">RU</button>
-              <button class="button__lang">EN</button>
-              <button class="button__lang">CH</button>
+            <div class="burger__menu__lang">
+              <button class="burger__menu__lang__btn">RU</button>
+              <button class="burger__menu__lang__btn">EN</button>
+              <button class="burger__menu__lang__btn">CH</button>
             </div>
-          </section>
-        </section>
-      </section>
-
-      <div class="overlay"></div>
-
-      <section class="conteiner">
-        <header class="header">
-          <div class="header__wrap">
-            <div id="burger__menu" class="burger__menu">
-              <span class="burger__span"></span>
-            </div>
-            <img class="logo" src="svg/Group.svg" alt="логотип сайта" />
-            <div class="header__menu">
-              <img
-                class="header__menu__phone"
-                src="svg/call.svg"
-                alt="иконка трубки телефонной"
-              />
-              <img
-                class="header__menu__phone__chat"
-                src="svg/chat.svg"
-                alt="иконка чата"
-              />
-              <img src="svg/profile.svg" alt="иконка профиля" />
-              <!-- <span class="header__line header__line_2"></span> -->
-            </div>
-            <!-- <span class="header__line"></span> -->
-            <div class="header__menu_left">
-              <img
-                class="settings__icon"
-                src="svg/repair.svg"
-                alt="иконка настроек"
-              />
-              <img
-                class="search__icon"
-                src="svg/checkstatus.svg"
-                alt="иконка поиска"
-              />
-            </div>
-          </div>
-        </header>
-        <div class="main__block">
-          <span class="main__block__span"></span>
-
+          </aside>
+      </div>
+      <div class="burger__overlay"></div>
+      <section class="services__conteiner">
+        <div class="services__block">
           <div class="wrap__menu__services">
-            <h1 class="title__block">Услуги и сервисы</h1>
-
-            <div class="block__menu__title">
-              <span class="block__menu__span">Оставить заявку</span>
-              <button class="btn__block__menu">
+            <h1 class="title">Услуги и сервисы</h1>
+            <div class="menu__services_top">
+              <span class="menu__services_top__text">Оставить заявку</span>
+              <button class="menu__services_top__btn">
                 <img src="svg/repair.svg" alt="иконка настроек" />
               </button>
-              <span class="block__menu__span">Статус ремонта</span>
-              <button class="btn__block__menu">
+              <span class="menu__services_top__text">Статус ремонта</span>
+              <button class="menu__services_top__btn">
                 <img src="svg/checkstatus.svg" alt="иконка чата" />
               </button>
             </div>
           </div>
-          <div class="slide__menu">
-            <button class="slide__menu__btn btn_first">
-              Ремонтируемые устройcтва
-            </button>
-            <button class="slide__menu__btn btn_second">
-              Дополнительные услуги
-            </button>
-            <button class="slide__menu__btn btn_third">Цены на услуги</button>
-            <button class="slide__menu__btn btn_forth">Специальные цены</button>
-            <button class="slide__menu__btn btn_fifth">
-              Ремонтируемые бренды
-            </button>
-            <button class="slide__menu__btn btn_sixth">
-              Адреса сервисных центров
-            </button>
-            <button class="slide__menu__btn btn_seventh">Отзывы</button>
-          </div>
-          <div class="block__information">
-            <div class="block__information__text">
-              <p class="chapter__first">
+          <ul class="slide__menu__nav">
+            <li><button class="slide__menu__nav__btn">Ремонтируемые устройcтва</li></button>
+            <li><button class="slide__menu__nav__btn">Дополнительные услуги</button></li>
+            <li><button class="slide__menu__nav__btn">Цены на услуги</button></li>
+            <li><button class="slide__menu__nav__btn">Специальные цены</button></li>
+            <li><button class="slide__menu__nav__btn">Ремонтируемые бренды</button></li>
+            <li><button class="slide__menu__nav__btn">Адреса сервисных центров</button></li>
+            <li><button class="slide__menu__nav__btn">Отзывы</button></li></ul>
+          <div class="services__block__information">
+            <div class="block__information__content">
+              <p class="text__screen_320">
                 Мы являемся авторизованным сервисным центром по ремонту техники
                 Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
                 официальной гарантией производителя.
                 <br />
                 <br />
-                <span class="chapter__second"
-                  ><span class="chapter__second_start"
+                <span class="text__screen_768"
+                  ><span class="text__screen_768__start"
                     >Мы успешно работаем с 1992 года и заслужили репутацию
                     надежного партнера,</span
-                  ><span class="chapter__second_end hidden"
+                  ><span class="text__screen_768__end hidden"
                     >что подтверждает большое количество постоянных клиентов. Мы
                     гордимся тем, что к нам обращаются по рекомендациям и, в
                     свою очередь, советуют нас родным и близким.</span
                   ></span
                 >
               </p>
-              <button class="image__button">
+              <button class="services__button">
                 <img
                   class="img__arrow"
                   src="svg/icon.svg"
                   alt="стрелочки вниз"
                 />
 
-                <span class="button__text">Читать далее</span>
+                <span class="services__button__text">Читать далее</span>
               </button>
             </div>
-            <div class="block__information__img">
+            <div class="block__information__image">
               <img
-                class="img__logo"
+                class="block__information__img"
                 src="img/Picture Copy.png"
                 alt="фото логотипа сайта"
               />
@@ -325,10 +306,11 @@
                 <h2 class="technique__block__title">Ремонт ПК</h2>
                 <img class="technique__block__img" src="svg/go.svg" alt="" />
               </div>
-              <div class="swiper-slide technique__block">
+              <div class="swiper-slide">
                 <h2 class="technique__block__title">Ремонт мониторов</h2>
                 <img class="technique__block__img" src="svg/go.svg" alt="" />
               </div>
+              
             </div>
             <div class="swiper-pagination"></div>
           </div>
@@ -670,7 +652,8 @@
           </div>
         </footer>
       </section>
-    </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
